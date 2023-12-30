@@ -48,7 +48,7 @@ public class xacnhanController extends HttpServlet {
 				chitiethoadonBo cthdbo = new chitiethoadonBo();
 				// Tao ra 1 hoa don
 				giohangBo gh = (giohangBo) session.getAttribute("gh");
-				//String giamgia = request.getParameter("giamgia");
+
 				if (gh.ds.size() != 0)
 					hdbo.Them(kh.getMakh());
 				else response.sendRedirect("giayController");
